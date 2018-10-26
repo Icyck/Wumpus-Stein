@@ -46,7 +46,7 @@ fs.readdir("./commands/", (err, files) => {
 bot.on("ready", () => {
   bot.user.setPresence({
       game: { 
-          name: 'Wumpus',
+          name: 'Wumpus || h',
           type: 'WATCHING'
       },
       status: "dnd"

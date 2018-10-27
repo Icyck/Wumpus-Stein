@@ -270,8 +270,7 @@ if(cmd === `${prefix}remrole`){
     .addField("`Bot Info` - Work", `${prefix}botinfo`)
     .addField("`8b` - Work", `${prefix}8b`)
     .addField("`!say` - Work", `${prefix}say`)
-    .addField("`Help warn` - Work", `${prefix}hw`)
-    .addField("`Help report` - Work", `${prefix}hr`)
+   
     .addField("`Update` - Work", `${prefix}update`)
     .addField("`Support` - Work", `${prefix}support`)
     .addField("        ` Author`: Famas_4sh", `Support - write *${prefix}support*`);
@@ -315,14 +314,13 @@ if(cmd === `${prefix}remrole`){
     .setTimestamp()
     .addField("Prefix - Work", "prefserver")
     .addField("Mod help - Work", "mod")
-    .addField("`Report` - Work", `${prefix}report`)
+   
   .addField("`Hello` - Work", `${prefix}hello`)
     .addField("`Server info` - Work", `${prefix}serverinfo`)
     .addField("`Bot Info` - Work", `${prefix}botinfo`)
     .addField("`8b` - Work", `${prefix}8b`)
     .addField("`!say` - Work", `${prefix}say`)
-    .addField("`Help warn` - Work", `${prefix}hw`)
-    .addField("`Help report` - Work", `${prefix}hr`)
+    .addField(`!8ball - Work`, `${prefix}8ball`)
     .addField("`Update` - Work", `${prefix}update`)
     .addField("`Support` - Work", `${prefix}support`)
     .addField("        ` Author`: Famas_4sh",`Support - write *${prefix}support*`);

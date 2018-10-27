@@ -151,6 +151,9 @@ if(coinAmt === baseAmt ){
 }
 
   }
+   if(cmd === `${prefix}docs`){
+   message.reply(`Hi dear bot user. This message will help you with Wumpus. Let's start with the config: First, create 4 channels, their name can be found through the command - *** config ***. Each channel is responsible for the function: for example, without ** welcome_leave ** there will be an error. Next mute command, create a role ** mute ** and in each of the channels set up access rights that the user can not send messages. Command * h * and * help *: always under the command there is an example of how to use. User id: for some commands a user ID is required, it can be recognized by the command "userid", "userinfo", "ufo". Also, if you do not understand how to use the command, enter **! <Your command> help **. Example: **!report help **. Set role and rem role: the most difficult commands, as Wumpus reacts to spaces, like a bull to red. If it writes **Couldn't find that role.**, check the number of spaces. Sometimes the prefix can fly because of errors, but it is easy to change it back, you can check it by command ** prefserver **. That's all, Good luck with the bot. ** P.S: where they stand *! * Put your prefix **`);
+   }
 
 
   if(cmd === `${prefix}coins`){

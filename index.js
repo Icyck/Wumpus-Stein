@@ -200,6 +200,10 @@ if(cmd === `invite`){
 
 
 if(cmd === `${prefix}setrole`){
+   if(args[0] == "help"){
+    message.reply("Usage: !setrole <user> <role>");
+    return;
+  }
  
 
   if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.reply("Sorry pal, you can't do that.");
@@ -221,6 +225,10 @@ if(cmd === `${prefix}setrole`){
 }
 
 if(cmd === `${prefix}remrole`){
+   if(args[0] == "help"){
+    message.reply("Usage: !remrole <user> <role>");
+    return;
+  }
 
   if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.reply("Sorry pal, you can't do that.");
   let iMember = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
@@ -334,6 +342,10 @@ if(cmd === `${prefix}remrole`){
     let rUser = message.guild.member(message.mentions.users.first() || msd.guild.members.get(args[0]));
     if(!rUser) return message.channel.send("Couldn't find user.");
     let reason = args.join(" ").slice(22);
+     if(args[0] == "help"){
+    message.reply("Usage: !report <user> <reason>");
+    return;
+  }
 
     let reportEmbed = new Discord.RichEmbed()
       .setDescription("Reports")
@@ -428,6 +440,10 @@ if(cmd === `${prefix}hello`){
   };
 
   if(cmd === `${prefix}ban`){
+     if(args[0] == "help"){
+    message.reply("Usage: !ban <user> <reason>");
+    return;
+  }
 
    
 
@@ -463,6 +479,10 @@ if(cmd === `${prefix}hello`){
   };
 
   if(cmd === `${prefix}kick`){
+     if(args[0] == "help"){
+    message.reply("Usage: !kick <user> <reason>");
+    return;
+  }
     
 
     let reason = args.slice(1).join(' ');
@@ -514,6 +534,10 @@ if(cmd === `${prefix}hello`){
   }*/
 
   if(cmd === `${prefix}unban`){
+     if(args[0] == "help"){
+    message.reply("Usage: !unban <ID> <reason>");
+    return;
+  }
     let reason = args.slice(1).join(' ')
     let user = args[0];
     if(reason.length < 1) return message.reply("You must supply a reason of the unban!");
@@ -552,6 +576,10 @@ if(cmd === `${prefix}avatar`){
 
 
   if(cmd === `${prefix}lockdown`){
+     if(args[0] == "help"){
+    message.reply("Usage: !lockdown <time>");
+    return;
+  }
     if(!message.member.hasPermission("MANAGE_GUILD")) return errors.noPerms(message, "MANAGE_GUILD");
     if (!bot.lockit) bot.lockit = [];
     let time = args.join(' ');
@@ -723,6 +751,10 @@ if(cmd === `${prefix}8ball`){
 
 
   if(cmd === `${prefix}warnlevel`){
+     if(args[0] == "help"){
+    message.reply("Usage: !warnlevel <user>");
+    return;
+  }
     if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("You can't do that.");
     let wUser = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
     if(!wUser) return message.reply("Couldn't find them yo");
@@ -740,6 +772,10 @@ if(cmd === `${prefix}8ball`){
  
 
   if(cmd === `${prefix}mute`){
+     if(args[0] == "help"){
+    message.reply("Usage: !mute <user> <reason>");
+    return;
+  }
 
     let reason = args.slice(1).join(' ');
   let user = message.mentions.users.first();
@@ -775,6 +811,10 @@ if(cmd === `${prefix}8ball`){
   }
   }
   if(cmd === `${prefix}unmute`){
+     if(args[0] == "help"){
+    message.reply("Usage: !unmute <user> <reason>");
+    return;
+  }
     let user = message.mentions.users.first();
    
     let iMember = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
